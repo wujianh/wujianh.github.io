@@ -5,12 +5,18 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="title：HTML5 &amp;lt; input &amp;gt; 新增的 type 值HTML5 &amp;lt; input &amp;gt; 新增的 type 值定义：type 属性规定了 input 元素的类型。 语法：&amp;lt;input type=&amp;quot;value&amp;quot;&amp;gt; 新增的属性值   值 描述     color 定义拾色器。   date 定义日期字段（带有 calendar 控件）">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/10/28/dom/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title：HTML5 &amp;lt; input &amp;gt; 新增的 type 值HTML5 &amp;lt; input &amp;gt; 新增的 type 值定义：type 属性规定了 input 元素的类型。 语法：&amp;lt;input type=&amp;quot;value&amp;quot;&amp;gt; 新增的属性值   值 描述     color 定义拾色器。   date 定义日期字段（带有 calendar 控件）">
+<meta property="og:image" content="http://yoursite.com/2017/10/28/dom/img/email.png">
+<meta property="og:updated_time" content="2017-10-28T03:20:16.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title：HTML5 &amp;lt; input &amp;gt; 新增的 type 值HTML5 &amp;lt; input &amp;gt; 新增的 type 值定义：type 属性规定了 input 元素的类型。 语法：&amp;lt;input type=&amp;quot;value&amp;quot;&amp;gt; 新增的属性值   值 描述     color 定义拾色器。   date 定义日期字段（带有 calendar 控件）">
+<meta name="twitter:image" content="http://yoursite.com/2017/10/28/dom/img/email.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,48 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-array" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/28/array/" class="article-date">
-  <time datetime="2017-10-28T03:21:59.288Z" itemprop="datePublished">2017-10-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="JavaScript-Array（数组）对象"><a href="#JavaScript-Array（数组）对象" class="headerlink" title="JavaScript Array（数组）对象"></a>JavaScript Array（数组）对象</h1><h4 id="数组是一组数据的集合。它的作用是：使用单独的变量名来存储一系列的值。"><a href="#数组是一组数据的集合。它的作用是：使用单独的变量名来存储一系列的值。" class="headerlink" title="数组是一组数据的集合。它的作用是：使用单独的变量名来存储一系列的值。"></a>数组是一组数据的集合。它的作用是：使用单独的变量名来存储一系列的值。</h4><h3 id="创建数组的方法"><a href="#创建数组的方法" class="headerlink" title="创建数组的方法"></a>创建数组的方法</h3><pre><code>1. var arr=[值1,值2,值3];
-2. var arr=new Array(值1,值2,值3);
-3. var array=new Array(数组长度);
-</code></pre><ul>
-<li><h5 id="小括号-说明："><a href="#小括号-说明：" class="headerlink" title="小括号( )说明："></a>小括号( )说明：</h5>（1）预先知道数组要保存的项目数量µ<br>（2）向Array构造函数中传递数组应包含的项<h3 id="数组元素的读写"><a href="#数组元素的读写" class="headerlink" title="数组元素的读写"></a>数组元素的读写</h3>  var a = arr[i];</li>
-<li><h5 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h5>读取和设置值时，使用方括号[ ]并提供相应的索引<br>说明：索引是从0开始的正整数<h3 id="数组长度"><a href="#数组长度" class="headerlink" title="数组长度"></a>数组长度</h3>  语法：array.length<br>  返回值：number</li>
-<li><h5 id="说明：-1"><a href="#说明：-1" class="headerlink" title="说明："></a>说明：</h5>（1）通过设置length可以从数组的末尾移除项或向数组中添加新项。<br>（2） 当把一个值放在超出当前数组大小的位置上时，数组会重新计算其长度值，长度值等于最后一项的索引加1。<h3 id="数组的栈方法"><a href="#数组的栈方法" class="headerlink" title="数组的栈方法"></a>数组的栈方法</h3><ol>
-<li>push()<br>语法：arrayObject.push(newele1,newele2,….,neweX)<br>功能：把它的参数顺序添加到 arrayObject 的尾部。<br>返回值：把指定的值添加到数组后的新长度。<br>2、unshift()<br>语法：arrayObject.unshift(newele1,newele2,….,neweX)<br>功能：把它的参数顺序添加到 arrayObject 的开头。<br>返回值：把指定的值添加到数组后的新长度。<br>3、pop()<br>语法：arrayObject.pop()<br>功能：删除 arrayObject 的最后一个元素<br>返回值：被删除的那个元素<br>4、shift()<br>语法：arrayObject.shift()<br>功能：删除 arrayObject中的第一个元素<br>返回值：被删除的那个元素<h3 id="数组的转换方法和重排序方法"><a href="#数组的转换方法和重排序方法" class="headerlink" title="数组的转换方法和重排序方法"></a>数组的转换方法和重排序方法</h3></li>
-<li>join()<br>语法：arrayObject.join(separator)<br>功能：用于把数组中的所有元素放入一个字符串。<br>返回值：字符串<br>2、reverse()<br>语法：stringObject.reverse()<br>功能：用于颠倒数组中元素的顺序。<br>返回值：数组<br>3、sort()<br>语法：arrayObject.sort(sortby)<br>功能：用于对数组的元素进行排序。<br>返回值：数组<h3 id="数组的操作方法："><a href="#数组的操作方法：" class="headerlink" title="数组的操作方法："></a>数组的操作方法：</h3></li>
-<li>concat()<br>语法：arrayObject.concat(arrayX,arrayX,……,arrayX)<br>功能：用于连接两个或多个数组<br>返回值：数组<br>2、slice()<br>语法：arrayObject.slice(start,end)<br>功能：从已有的数组中返回选定的元素。</li>
-</ol>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/28/array/" data-id="cj9arhw3c0000iscpjmzby8v8" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-dom" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-dom" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/28/dom/" class="article-date">
   <time datetime="2017-10-28T03:21:59.036Z" itemprop="datePublished">2017-10-28</time>
@@ -220,55 +185,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/16/hello-world/" class="article-date">
-  <time datetime="2017-10-16T11:24:47.531Z" itemprop="datePublished">2017-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/10/28/array/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
         
+          (no title)
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/16/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2017/10/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/16/hello-world/" data-id="cj9arhw570002iscp1j8vdsiz" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
