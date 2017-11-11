@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS3过渡 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CSS3 过渡定义和用法 允许css的属性值在一定的时间区间内平滑地过渡 在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值。CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容： 指定要添加效果的CSS属性 指定效果的持续时间。transition 属性是一个简写属性，用于设置四个过渡属性： transition-proper">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3过渡">
+<meta property="og:url" content="http://yoursite.com/2017/11/11/transition/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CSS3 过渡定义和用法 允许css的属性值在一定的时间区间内平滑地过渡 在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值。CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容： 指定要添加效果的CSS属性 指定效果的持续时间。transition 属性是一个简写属性，用于设置四个过渡属性： transition-proper">
+<meta property="og:updated_time" content="2017-11-11T02:59:51.742Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3过渡">
+<meta name="twitter:description" content="CSS3 过渡定义和用法 允许css的属性值在一定的时间区间内平滑地过渡 在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值。CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容： 指定要添加效果的CSS属性 指定效果的持续时间。transition 属性是一个简写属性，用于设置四个过渡属性： transition-proper">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-transition" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/11/transition/" class="article-date">
+  <time datetime="2017-11-11T00:59:16.094Z" itemprop="datePublished">2017-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS3过渡
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS3-过渡"><a href="#CSS3-过渡" class="headerlink" title="CSS3 过渡"></a>CSS3 过渡</h1><h3 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h3><ul>
+<li>允许css的属性值在一定的时间区间内平滑地过渡</li>
+<li>在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值。<h4 id="CSS3-过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容："><a href="#CSS3-过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容：" class="headerlink" title="CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容："></a>CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容：</h4></li>
+<li>指定要添加效果的CSS属性</li>
+<li>指定效果的持续时间。<h4 id="transition-属性是一个简写属性，用于设置四个过渡属性："><a href="#transition-属性是一个简写属性，用于设置四个过渡属性：" class="headerlink" title="transition 属性是一个简写属性，用于设置四个过渡属性："></a>transition 属性是一个简写属性，用于设置四个过渡属性：</h4></li>
+<li>transition-property</li>
+<li>transition-duration(必要，否则时长为 0，不会产生过渡效果。)</li>
+<li>transition-timing-function</li>
+<li>transition-delay<h3 id="过渡属性的描述"><a href="#过渡属性的描述" class="headerlink" title="过渡属性的描述"></a>过渡属性的描述</h3>| 属性 | 描述 |<br>| —- | —- |<br>| transition | 复合属性，检索或设置对象变换时的过渡。 |<br>| transition-property | 检索或设置对象中的参与过渡的属性。 |<br>| transition-duration | 检索或设置对象过渡的持续时间。 |<br>| transition-timing-function | 检索或设置对象中过渡的动画类型。 |<br>| transition-delay | 检索或设置对象延迟过渡的时间 |<h3 id="transition-语法"><a href="#transition-语法" class="headerlink" title="transition 语法"></a>transition 语法</h3>  transition: property duration timing-function delay;<h3 id="transition-property-属性"><a href="#transition-property-属性" class="headerlink" title="transition-property 属性"></a>transition-property 属性</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4>  transition-property: none | all | property;<h4 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h4></li>
+<li>none (没有属性改变)</li>
+<li>all (所有属性改变)，默认值</li>
+<li>property (元素属性名)<h3 id="transition-duration-属性"><a href="#transition-duration-属性" class="headerlink" title="transition-duration 属性"></a>transition-duration 属性</h3><h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4>  transition-duration: time;<h4 id="参数值说明："><a href="#参数值说明：" class="headerlink" title="参数值说明："></a>参数值说明：</h4></li>
+<li>规定完成过渡效果需要花费的时间（以秒或毫秒计）</li>
+<li>默认值是 0<h3 id="transition-timing-function属性"><a href="#transition-timing-function属性" class="headerlink" title="transition-timing-function属性"></a>transition-timing-function属性</h3><h4 id="语法：-2"><a href="#语法：-2" class="headerlink" title="语法："></a>语法：</h4>  transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out |step-start | step-end | steps(<integer>[, [ start | end ] ]?) |cubic-bezier(<number>, <number>, <number>, <number>);<h4 id="参数说明：-1"><a href="#参数说明：-1" class="headerlink" title="参数说明："></a>参数说明：</h4></number></number></number></number></integer></li>
+<li>linear：线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0)</li>
+<li>ease：平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0)</li>
+<li>ease-in：由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0)</li>
+<li>ease-out：由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0)</li>
+<li>ease-in-out：由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0)</li>
+<li>step-start：等同于 steps(1, start)</li>
+<li>step-end：等同于 steps(1, end)</li>
+<li>steps(<integer>[, [ start | end ] ]?)：接受两个参数的步进函数<br>（1）第一个参数：必须为正整数，指定函数的步数<br>（2）第二个参数：取值可是start或end，指定每一步的值发生变化的时间点<br>（3）第二个参数：可选，默认值为end</integer></li>
+<li>cubic-bezier(<number>, <number>, <number>, <number>)：特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内<h3 id="transition-delay属性"><a href="#transition-delay属性" class="headerlink" title="transition-delay属性"></a>transition-delay属性</h3><h4 id="语法：-3"><a href="#语法：-3" class="headerlink" title="语法："></a>语法：</h4>  transition-delay: time;<h4 id="参数说明：-2"><a href="#参数说明：-2" class="headerlink" title="参数说明："></a>参数说明：</h4></number></number></number></number></li>
+<li>指定秒或毫秒数之前要等待切换效果开始</li>
+<li>默认值为0</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/11/transition/" data-id="cj9ur19o10002o4cpkiooygk8" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/04/gradient/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">gradient</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/11/transition/">CSS3过渡</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/04/gradient/">gradient</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/28/array/">JavaScript Array（数组）对象</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/28/input/">HTML5 &lt; input &gt; 新增的 type 值</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/16/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
